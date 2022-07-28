@@ -1,0 +1,388 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* Common */
+.mt-8 {
+    margin-top: 8px;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.clear {
+    clear: both;
+}
+.text-white {
+    color: white !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding: 0 8px;
+}
+.col-third {
+    width: 33.33333%;
+}
+.col-fourth {
+    width: 25%;
+}
+.text-center {
+    text-align: center !important ;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+/* Common */
+#app {
+    /* height: 2000px; */
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+}
+#nav li {
+    
+    position:relative
+}
+#nav .subnav {
+    display: none;
+    position:absolute ;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    top: 100% ;
+    left: 0;
+}
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding-left: 12px;
+    line-height: 38px;
+    min-width: 160px;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+   
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
+     background-color: #ccc;
+    color: #000;
+}
+#header .search-button {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+#header .search-button:hover {
+    background-color: #f44336;
+}
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* #slider {
+    position: relative;
+    min-height: 500px;
+    background-color:rgb(228, 169, 169);
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/asset/img/member-image/slide4.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: ;
+    width: 100%;
+    text-align: center;
+    color: black;
+    /* Center */
+} */
+/* #slider .text-heading{
+    font-size: 30px;
+    font-weight: 500;
+     
+} */
+/* #slider .text-description{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 550;
+} */
+#content {
+    min-height: 1500px;
+    background-color: white ;
+}
+#content .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding: 64px 0 112px;
+}
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    opacity: 0.65;
+    font-style: italic;
+}
+#content .about-text {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .member-list {
+    margin-top: 48px;
+    /* overflow: hidden; */
+
+}
+/* #content .member-item {
+    
+    text-align: center;
+   
+} */
+#content .member-image {
+     width: 180px;
+     margin-top: 15px;
+     border-radius: 4px;
+}
+#content .member-name {
+    /* text-align: center; */
+    font-size: 15px; 
+    font-weight: 550;
+}
+#content .member-job {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #757575;
+    
+}
+/* Tour-section */
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    /* height: 40px;Khoong can giuwax */
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style : none;
+}
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 6px;
+    margin-left: 16px;
+}
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-top: -3px;
+}
+/* Tickets */
+.place-list{
+   
+    margin-top: 32px;
+}
+
+.place-list .place-img{
+    width: 100%;
+    display: block;
+}
+.place-list .place-img:hover {
+    opacity: 0.6;
+}
+.place-list .place-body {
+    padding: 15px 16px;   
+    background-color: #fff;
+    
+}
+.place-list .place-heading {
+    font-size: 15px;
+
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+.place-buy-ticket {
+    padding: 11px 14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+.place-buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/* Contact  */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form {
+    font-size: 15px;
+    
+}
+.contact-form .form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.contact-button {
+    margin-top: 16px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.contact-button:hover{
+    color:#000;
+    background-color: #ccc;
+}
+.background-last img {
+    width: 100%;
+    
+}
+.background-last{
+    position: relative;
+}
+.test-keke{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    
+}
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+
+
+}
+.social-list a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 24px;
+    
+}
+.social-list {
+    margin-bottom: 32px;
+}
+#footer p {
+    color: #757575;
+}
+.copyright a {
+    color: #757575;
+    text-decoration: ;
+}
+#footer p a:hover,
+.social-list a:hover{
+    opacity: 0.6;
+}
+/* Footer */
+.test-two {
+    padding-top: 46px;
+    position: relative;
+}
+.test-two img {
+    width: 100%;
+}
+.text-content-hu {
+    position: absolute;
+    bottom: 48px;
+    color: ;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+.text-heading-1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.text-description-1 {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+
